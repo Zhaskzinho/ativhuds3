@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo forEach()</title>
+</head>
+<body>
+
+  <h1>Exemplo forEach()</h1>
+  <p>Veja o resultado das multiplicações pelo número inserido: </p>
+
+  <p id="result"></p>
+
+  <script>
+    const numbers = [1, 2, 3, 4, 5];
+    let result = "";
+
+    const userInput = prompt("Digite um número:");
+
+    const userNumber = parseInt(userInput);
+
+    numbers.forEach(function(number) {
+      result += (number * userNumber) + "<br>";
+    });
+
+    document.getElementById("result").innerHTML = result;
+  </script>
+
+</body>
+</html>
